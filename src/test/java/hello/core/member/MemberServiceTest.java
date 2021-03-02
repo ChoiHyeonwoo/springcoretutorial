@@ -4,6 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MemberServiceTest {
+    //TODO: DIP 원칙(구현체 까지 의존) 위배 수정
     MemberService memberService = new MemberServiceImpl();
 
     @Test

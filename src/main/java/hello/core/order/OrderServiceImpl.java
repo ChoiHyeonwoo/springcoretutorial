@@ -11,7 +11,7 @@ public class OrderServiceImpl implements OrderService {
     // OCP 위반 (구현체[DiscountPolicy]가 변경되었을때 클라이언트[OrderServiceImpl] 소스가 변경됨.)
     //private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
     //private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
-    // 해결?!
+    // 해결?! -> NPE
     private DiscountPolicy discountPolicy;
 
     @Override

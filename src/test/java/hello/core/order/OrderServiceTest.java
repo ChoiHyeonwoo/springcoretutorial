@@ -8,7 +8,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
-
+    //TODO: DIP 원칙위배 수정
     MemberService memberService = new MemberServiceImpl();
     OrderService orderService = new OrderServiceImpl();
 

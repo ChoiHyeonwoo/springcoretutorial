@@ -3,7 +3,7 @@ package hello.core.member;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemoryMemberRepositoryImpl implements MemberRepository {
+public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();   // 동시성 때문에 concurrent HashMap을 사용해야함.
     @Override

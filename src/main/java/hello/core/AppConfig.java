@@ -15,7 +15,7 @@ public class AppConfig {
 
     /**
      * 역할과 구현이 드러나게끔 변경
-     * @return
+     * method Name: Bean Name
      */
     @Bean
     public MemberService memberService(){

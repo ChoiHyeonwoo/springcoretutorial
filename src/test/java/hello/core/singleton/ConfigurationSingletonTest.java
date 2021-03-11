@@ -31,4 +31,14 @@ public class ConfigurationSingletonTest {
         assertThat(orderService.getMemberRepository()).isSameAs(memberRepository);
         assertThat(memberService.getMemberRepository()).isSameAs(orderService.getMemberRepository());
     }
+
+    @Test
+    void configurationDeep(){
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        AppConfig bean = ac.getBean(AppConfig.class);
+
+        System.out.println("bean.getClass() = " + bean.getClass());
+        // bean.getClass() = class hello.core.AppConfig$$EnhancerBySpringCGLIB$$ce5e1c19 ?? $$EnhancerBySpringCGLIB$$ce5e1c19 이게뭐야
+        // bytecode를 조작하는 라이브러리를 통해 다른 클래스를 스프링 빈으로 등록.
+    }
 }

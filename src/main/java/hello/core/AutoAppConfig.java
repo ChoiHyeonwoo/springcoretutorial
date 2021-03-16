@@ -12,4 +12,5 @@ import org.springframework.context.annotation.FilterType;
 )
 // 기존 AppConfig.java, TestConfig.java 등 예외처리.
 public class AutoAppConfig {
+    // 수동 빈 등록 시 자동 빈 등록을 오버라이딩
 }

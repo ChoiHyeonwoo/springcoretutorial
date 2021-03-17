@@ -13,6 +13,11 @@ import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * 다수의 빈을 등록해 선택적으로 빈을 사용해야 할때,,!!!
+ * @Configuration 으로 별도로 수동 빈을 등록
+ * 자동 빈 등록 사용시 별도의 패키지로 두어 관리해야,,!
+ */
 public class AllBeanTest {
 
     @Test
